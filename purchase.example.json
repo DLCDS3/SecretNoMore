@@ -1,0 +1,11 @@
+{
+  "productUrl": "https://secretlair.wizards.com/us/product/1252788/secret-lair-x-marvel-true-believers-in-love-foil-edition",
+  "expectedProductId": "1252788",
+  "expectedVariant": "Foil",
+  "expectedTitle": "Secret Lair x Marvel: True Believers in Love Foil Edition",
+  "quantityPerAccount": 1,
+  "maxTotalPerAccount": 75,
+  "currency": "USD",
+  "accountIds": ["account01"],
+  "checkoutMode": "review"
+}

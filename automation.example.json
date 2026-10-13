@@ -1,0 +1,38 @@
+{
+  "timeoutSeconds": 60,
+  "postCartAction": "view-cart",
+  "loginOrder": "cart-first",
+  "loginOrigins": ["https://myaccounts.wizards.com", "https://auth.wizards.com"],
+  "selectors": {
+    "signedInIdentity": { "text": "{loginLabel}", "exact": true },
+    "loginEntry": { "textPattern": "^(log in|sign in)$" },
+    "cartLoginEntry": [
+      { "role": "button", "namePattern": "log\\s*in\\s*/\\s*sign\\s*up" },
+      { "role": "link", "namePattern": "log\\s*in\\s*/\\s*sign\\s*up" },
+      { "textPattern": "log\\s*in\\s*/\\s*sign\\s*up" }
+    ],
+    "openCart": { "textPattern": "^(your cart|view cart)(\\s*\\(\\d+\\))?$" },
+    "email": [
+      { "css": "input[type=email], input[name=email], input[name=username], input#username, input#email, input[autocomplete=username], input[autocomplete=email]" },
+      { "labelPattern": "^email(?: address)?\\s*\\*?$" }
+    ],
+    "password": [
+      { "css": "input[type=password], input#password, input[name=password]" },
+      { "labelPattern": "^password\\s*\\*?$" }
+    ],
+    "emailNext": { "role": "button", "namePattern": "^(continue|next)$" },
+    "loginSubmit": { "role": "button", "namePattern": "^(log in|sign in)$" },
+    "productTitle": { "role": "heading", "level": 1 },
+    "productScope": null,
+    "quantity": { "css": "input[name=quantity], input[name=qty], select[name=quantity]" },
+    "viewCart": [
+      { "role": "button", "namePattern": "^(view cart|proceed to cart)$" },
+      { "role": "link", "namePattern": "^(view cart|proceed to cart)$" }
+    ],
+    "proceedToCart": { "textPattern": "^proceed to cart$" },
+    "addToCart": [
+      { "role": "button", "namePattern": "^add to cart$" },
+      { "role": "link", "namePattern": "^add to cart$" }
+    ]
+  }
+}

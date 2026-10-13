@@ -1,0 +1,7 @@
+{
+  "name": "secret-no-more",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test tests/automation.test.mjs" },
+  "dependencies": { "playwright": "1.62.1" }
+}

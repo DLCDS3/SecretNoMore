@@ -1,0 +1,6 @@
+/.local/
+/accounts.json
+/purchase.json
+/schedule.json
+/automation.json
+node_modules/
